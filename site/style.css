@@ -57,7 +57,7 @@ header h1 {
     color: black;
     display: none;
     padding-left:1vw;
-    height: 100%;
+    height: 90vh;
 }
 
 footer {
@@ -72,8 +72,34 @@ footer {
    
 }
 
+.filterBar {
+    position: absolute;
+    top: 17vh;
+    background-color: #f7a800;
+    font-weight: bold;
+    color: white;
+    padding-top:1vh;
+    padding-left:1vw;
+    height: 73vh;
+}
+.filterButtonOpened {
+    margin-right:1vw;
+    float: right;
+    width: 2vw;
+    height: 3vh;
+    font-weight: bold;
+}
+
+.filterButtonClosed {
+    margin-top: 1vh;
+    margin-right:1vw;
+    float:left;
+    width: 2vw;
+    height: 5vh;
+    font-weight: bold;
+}
+
 #Bars {
-    
 }
 
 #About {

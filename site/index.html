@@ -10,18 +10,33 @@
 </head>
 <body>
     <header id="SiteName">
-        <h1>MKE Events
+        <h1>
+            MKE Events
             <div id="miniHeader">Find Local Events</div>
         </h1>
         <button class="tablink" onclick="openPage('Events', this)" id="defaultOpen">Events</button>
         <button class="tablink" onclick="openPage('Bars', this)">Our Bars</button>
         <button class="tablink" onclick="openPage('About', this)">About Us</button>
-        <button class="tablink" onclick="openPage('Contact', this)">Contact Us</button>  
+        <button class="tablink" onclick="openPage('Contact', this)">Contact Us</button>
     </header>
 
+    <div class="filterBar" style="display:none" id="mySidebar">
+        <button class="filterButtonOpened"
+                onclick="w3_close()">
+             &times;
+        </button>
+        <div>
+            filters will go here
+        </div>
+    </div>
+
     <div id="Events" class="tabcontent">
-        <h3>Events</h3>
-        <p>Event page stuff will go here</p>
+        <div id="main">
+            <button id="openNav" class="filterButtonClosed" onclick="w3_open()">&#9776;</button>
+            <h3>Events</h3>
+            <p>events will be listed here</p>
+        </div>
+
     </div>
 
     <div id="Bars" class="tabcontent">
