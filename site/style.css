@@ -30,6 +30,7 @@ header h1 {
     width: 30vw;
     max-width: 30%;
 }
+
 #miniHeader {
     font-size: 1.5vw;
 }
@@ -56,7 +57,7 @@ header h1 {
     background-color: white;
     color: black;
     display: none;
-    padding-left:1vw;
+    padding-left: 1vw;
     height: 90vh;
 }
 
@@ -69,7 +70,6 @@ footer {
 }
 
 #Events {
-   
 }
 
 .filterBar {
@@ -78,34 +78,36 @@ footer {
     background-color: #f7a800;
     font-weight: bold;
     color: white;
-    padding-top:1vh;
-    padding-left:1vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
     height: 73vh;
 }
+
 .filterButtonOpened {
-    margin-right:1vw;
+    margin-right: 1vw;
     float: right;
     width: 2vw;
     height: 3vh;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .filterButtonClosed {
     margin-top: 1vh;
-    margin-right:1vw;
-    float:left;
-    width: 2vw;
-    height: 5vh;
+    margin-right: 1vw;
+    float: left;
+    width: 3vw;
+    height: 7vh;
     font-weight: bold;
+    cursor: pointer;
 }
 
-#Bars {
-}
+
+    #Bars {
+    }
 
 #About {
-    
 }
 
 #Contact {
-   
 }

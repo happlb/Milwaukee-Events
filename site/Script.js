@@ -1,4 +1,9 @@
 /*open defultopen tab on load*/
+/*
+ * pieces of code were taken from:
+ * https://www.w3schools.com/howto/howto_js_full_page_tabs.asp
+ * https://www.w3schools.com/w3css/w3css_sidebar.asp
+ */
 
 window.onload = function () {
     startTab();
