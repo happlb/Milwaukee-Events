@@ -17,10 +17,23 @@ body, html {
 }
 
 h2 {
+    color: #00a8e1;
     font-size: 7vw;
     float: left;
     padding-top: 5vh;
     padding-left: 3vw;
+}
+
+h3 {
+    color: #f7a800;
+    font-size: 3vw;
+    float: left;
+}
+
+h4 {
+    color: #f7a800;
+    font-size: 1.5vw;
+    float: left;
 }
 /* Style tab links and header*/
 header h1 {
@@ -99,14 +112,15 @@ footer {
 }
 
 .filterButtonClosed {
-    margin-top: 1vh;
-    margin-right: 1vw;
+    margin-top: 9vh;
+    margin-left: 2vw;
     float: left;
-    width: 3vw;
-    height: 7vh;
+    width: 4vw;
+    height: auto;
     font-weight: bold;
     cursor: pointer;
 }
+
 
 
 #Bars {
@@ -129,23 +143,77 @@ footer {
 #email {
     padding-left: 0vh;
     position: absolute;
-    top: 45vh;
-    left: 8vw;
+    top: 35vh;
+    left: 40vw;
 }
 
 #facebook {
     padding-left: 0vh;
     position: absolute;
-    top: 65vh;
-    left: 8vw;
+    top: 55vh;
+    left: 40vw;
 }
 
 
 .LI-profile-badge {
     overflow: hidden;
     max-height: 73vh;
-    padding-top: 7.5vh;
-    padding-right: 7.5vw;
+    padding-top: 7vh;
+    padding-right: 3vw;
     margin: unset;
     float: right;
+}
+
+.emailSignUp {
+    max-width: 25vw;
+    float: left;
+    padding-left: 0vh;
+    position: absolute;
+    top: 40vh;
+    left: 4vw;
+}
+
+.emailButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00a8e1;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 25vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .emailButton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .emailButton span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -1.5vw;
+            transition: 0.5s;
+        }
+
+    .emailButton:hover span {
+        padding-right: 1.5vw;
+    }
+
+        .emailButton:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+input[type="text"] {
+    margin-top:3vh;
+    width:25vw;
+    font-size: 1.5vw;
 }

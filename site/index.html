@@ -34,25 +34,37 @@
         <div id="main">
             <!--filter-solid.svg taken from  https://fontawesome.com/icons/filter-->
             <img src='filter-solid.svg' id="openNav" class="filterButtonClosed" onclick="w3_open()">
-            <h2>Events</h2>
+            <h2>Events,</h2>
             <p>events will be listed here</p>
         </div>
 
     </div>
 
     <div id="Bars" class="tabcontent">
-        <h2>Bars We Partner With</h2>
+        <h2>Bars We Partner With,</h2>
         <p>List of bars will go here - TODO think of a better tab name than our bars</p>
     </div>
 
     <div id="About" class="tabcontent">
-        <h2>About Us</h2>
+        <h2>About Us,</h2>
         <p>simple stuff about why we made the site and some background throw in an image or two</p>
     </div>
 
     <div id="Contact" class="tabcontent">
         <h2>Say Hi,</h2>
         <div>
+            <div class="emailSignUp">
+                <br>
+                <h3>Stay Connected</h3>
+                <h4>Stay up to date with events, give aways, and more.</h4>
+                <br>
+                <form>
+                    <br>
+                    <input type="text" id="emailField" name="emailField" placeholder="Enter your E-mail address"><br>
+                    <br>
+                    <a class="emailButton" onclick="addEmail(document.getElementById('emailField').value)" style="vertical-align:middle"><span>Sign Up!</span></a>
+                </form>
+            </div>
             <!--image from : https://fontawesome.com/icons/envelope-open-text?style=solid -->
             <a id="email" href="mailto:happlb@msoe.edu;lewis1728@gmail.com?Subject=MKE%20Events" target="_top">
                 <img id="contactIcon" src="envelope-open-text-solid.svg" alt="Send Email">
@@ -71,7 +83,7 @@
     </div>
 
     <footer>
-        <h3>Footer stuff will go here</h3>
+        <p>Footer stuff will go here</p>
     </footer>
 
 </body>
