@@ -197,8 +197,13 @@ footer {
     float: left;
     padding-left: 0vh;
     position: absolute;
-    padding-top: 40vh;
-    left: 4vw;
+    padding-top: 20vh;
+    left: 3vw;
+}
+
+#Contact h2{
+    margin:unset;
+    padding:unset;
 }
 
 .emailButton {
