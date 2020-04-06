@@ -114,11 +114,11 @@ footer {
 }
 
 .filterButtonClosed {
-    margin-top: 9vh;
+    margin-top: 8vh;
     margin-left: 2vw;
     float: left;
-    width: 4vw;
-    height: auto;
+    height: 4.5vw;
+    width: auto;
     font-weight: bold;
     cursor: pointer;
 }
