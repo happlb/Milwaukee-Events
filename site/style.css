@@ -17,6 +17,7 @@ body, html {
 }
 
 h2 {
+    font-weight: bold;
     color: #00a8e1;
     font-size: 7vw;
     float: left;
@@ -25,6 +26,7 @@ h2 {
 }
 
 h3 {
+    font-weight: bold;
     color: #f7a800;
     font-size: 3vw;
     float: left;
@@ -126,12 +128,28 @@ footer {
 #Bars {
 }
 
-#About {
+#About img {
+    position:absolute;
+    top:20vh;
+    right:3vw;
+    width:30vw;
+    height:auto;
 }
 
+    #About p {
+        font-weight: bold;
+        color: #f7a800;
+        padding-left: 3vw;
+        max-height: 50vh;
+        width: 65vw;
+        overflow: auto;
+        font-size: 2.5vw;
+    }
 
 #Contact p {
     text-decoration: unset;
+    max-width: 15vw;
+    overflow: auto;
 }
 
 #contactIcon {
