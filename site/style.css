@@ -16,6 +16,12 @@ body, html {
     font-family: Arial;
 }
 
+h2 {
+    font-size: 7vw;
+    float: left;
+    padding-top: 5vh;
+    padding-left: 3vw;
+}
 /* Style tab links and header*/
 header h1 {
     background-color: #0d2240;
@@ -48,9 +54,9 @@ header h1 {
     width: 17.5%;
 }
 
-.tablink:hover {
-    background-color: #00a8e1;
-}
+    .tablink:hover {
+        background-color: #00a8e1;
+    }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -109,11 +115,37 @@ footer {
 #About {
 }
 
-#Contact {
-    text-decoration:none;
+
+#Contact p {
+    text-decoration: none;
+    float: left;
 }
 
-#Contact img{
+#contactIcon {
     width: 5vw;
     height: auto;
+}
+
+#email {
+    padding-left: 0vh;
+    position: absolute;
+    top: 45vh;
+    left: 8vw;
+}
+
+#facebook {
+    padding-left: 0vh;
+    position: absolute;
+    top: 65vh;
+    left: 8vw;
+}
+
+
+.LI-profile-badge {
+    overflow: hidden;
+    max-height: 73vh;
+    padding-top: 7.5vh;
+    padding-right: 7.5vw;
+    margin: unset;
+    float: right;
 }

@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="Script.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MKE Events</title>
@@ -22,7 +23,7 @@
     <div class="filterBar" style="display:none" id="mySidebar">
         <button class="filterButtonOpened"
                 onclick="w3_close()">
-             &times;
+            &times;
         </button>
         <div>
             filters will go here
@@ -51,11 +52,22 @@
 
     <div id="Contact" class="tabcontent">
         <h2>Say Hi,</h2>
-        <!--image from : https://fontawesome.com/icons/envelope-open-text?style=solid -->
-        <a href="mailto:happlb@msoe.edu;lewis1728@gmail.com?Subject=MKE%20Events" target="_top">
-            <img src="envelope-open-text-solid.svg" alt="Send Email">
-            <p>Send us an E-mail</p>
-        </a>
+        <div>
+            <!--image from : https://fontawesome.com/icons/envelope-open-text?style=solid -->
+            <a id="email" href="mailto:happlb@msoe.edu;lewis1728@gmail.com?Subject=MKE%20Events" target="_top">
+                <img id="contactIcon" src="envelope-open-text-solid.svg" alt="Send Email">
+                <br>
+                <p>Send us an E-mail</p>
+            </a>
+            <!-- https: //fontawesome.com/icons/facebook-square?style =brands-->
+            <a id="facebook" href="https://facebook.com" target="_blank">
+                <img id="contactIcon" src="facebook-square-brands.svg" alt="Go to Facebook">
+                <br>
+                <p>Follow us on Facebook</p>
+            </a>
+            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="lucy-happ-647684153"><a class="LI-simple-link" href='https://www.linkedin.com/in/lucy-happ-647684153?trk=profile-badge'>Lucy Happ</a></div>
+            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="lucy-happ-647684153"><a class="LI-simple-link" href='https://www.linkedin.com/in/lucy-happ-647684153?trk=profile-badge'>Lucy Happ</a></div>
+        </div>
     </div>
 
     <footer>
