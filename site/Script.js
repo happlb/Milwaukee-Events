@@ -51,4 +51,5 @@ function w3_close() {
 
 function addEmail(emailField) {
     alert("Added");
+    //TODO add to a database
 }
