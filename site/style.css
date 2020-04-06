@@ -131,8 +131,7 @@ footer {
 
 
 #Contact p {
-    text-decoration: none;
-    float: left;
+    text-decoration: unset;
 }
 
 #contactIcon {
@@ -141,17 +140,15 @@ footer {
 }
 
 #email {
-    padding-left: 0vh;
     position: absolute;
     top: 35vh;
-    left: 40vw;
+    left: 38vw;
 }
 
 #facebook {
-    padding-left: 0vh;
     position: absolute;
     top: 55vh;
-    left: 40vw;
+    left: 38vw;
 }
 
 
