@@ -151,14 +151,21 @@ footer {
     left: 38vw;
 }
 
+#linkedinBadges {
+    max-width: 50vw;
+    position: absolute;
+    top: 25vh;
+    right: 3vw;
+    max-height: 62vh;
+    overflow: auto;
+}
 
 .LI-profile-badge {
     overflow: hidden;
-    max-height: 73vh;
-    padding-top: 7vh;
-    padding-right: 3vw;
     margin: unset;
     float: right;
+    padding-bottom: 2.5vh;
+    margin-left: 2vw;
 }
 
 .emailSignUp {
@@ -166,7 +173,7 @@ footer {
     float: left;
     padding-left: 0vh;
     position: absolute;
-    top: 40vh;
+    padding-top: 40vh;
     left: 4vw;
 }
 
@@ -210,7 +217,7 @@ footer {
         }
 
 input[type="text"] {
-    margin-top:3vh;
-    width:25vw;
+    margin-top: 3vh;
+    width: 25vw;
     font-size: 1.5vw;
 }
