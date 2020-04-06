@@ -103,11 +103,17 @@ footer {
 }
 
 
-    #Bars {
-    }
+#Bars {
+}
 
 #About {
 }
 
 #Contact {
+    text-decoration:none;
+}
+
+#Contact img{
+    width: 5vw;
+    height: auto;
 }

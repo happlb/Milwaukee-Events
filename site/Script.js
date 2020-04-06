@@ -47,3 +47,12 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("openNav").style.display = "inline-block";
 }
+
+function sendMail(subject, myText) {
+    var link = "mailto:happlb@msoe.edu"
+        + "&subject=" + escape(subject)
+        + "&body=" + escape(document.getElementById(myText).value)
+        ;
+
+    window.location.href = link;
+}

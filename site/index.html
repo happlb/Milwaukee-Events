@@ -11,7 +11,7 @@
     <header id="SiteName">
         <h1>
             MKE Events
-            <div id="miniHeader">Find Local Events</div>
+            <div id="miniHeader"> Find Local Events</div>
         </h1>
         <button class="tablink" onclick="openPage('Events', this)" id="defaultOpen">Events</button>
         <button class="tablink" onclick="openPage('Bars', this)">Our Bars</button>
@@ -33,25 +33,29 @@
         <div id="main">
             <!--filter-solid.svg taken from  https://fontawesome.com/icons/filter-->
             <img src='filter-solid.svg' id="openNav" class="filterButtonClosed" onclick="w3_open()">
-            <h3>Events</h3>
+            <h2>Events</h2>
             <p>events will be listed here</p>
         </div>
 
     </div>
 
     <div id="Bars" class="tabcontent">
-        <h3>Bars We Partner With</h3>
+        <h2>Bars We Partner With</h2>
         <p>List of bars will go here - TODO think of a better tab name than our bars</p>
     </div>
 
     <div id="About" class="tabcontent">
-        <h3>About Us</h3>
+        <h2>About Us</h2>
         <p>simple stuff about why we made the site and some background throw in an image or two</p>
     </div>
 
     <div id="Contact" class="tabcontent">
-        <h3>Say Hi,</h3>
-        <p>text fields and drop down stuff for an email form</p>
+        <h2>Say Hi,</h2>
+        <!--image from : https://fontawesome.com/icons/envelope-open-text?style=solid -->
+        <a href="mailto:happlb@msoe.edu;lewis1728@gmail.com?Subject=MKE%20Events" target="_top">
+            <img src="envelope-open-text-solid.svg" alt="Send Email">
+            <p>Send us an E-mail</p>
+        </a>
     </div>
 
     <footer>
