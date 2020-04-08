@@ -110,3 +110,4 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.documentElement.style.setProperty('--vw', `${vw}px`);
 });
+

@@ -105,6 +105,44 @@ footer {
     padding-top: 2vh;
 }
 
+.eventsbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00a8e1;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding: 1vw;
+    width: 15vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .eventsbutton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .eventsbutton span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -1.5vw;
+            transition: 0.5s;
+        }
+
+    .eventsbutton:hover span {
+        padding-right: 1.5vw;
+    }
+
+        .eventsbutton:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
 
 .eventLeftPanel {
     Position: absolute;

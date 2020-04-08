@@ -30,6 +30,13 @@
                 <br>
                 <div id="closedFilterBar">
                     <form action="/action_page.php">
+                        <h4>Date</h4>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="today">
+                        <label for="vehicle1"> Today</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="week">
+                        <label for="vehicle2"> This Week </label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="month">
+                        <label for="vehicle3"> This Month</label><br><br>
                         <h4>Neighborhoods</h4>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="downtown">
                         <label for="vehicle1"> Downtown</label><br>
@@ -50,7 +57,7 @@
                         <label for="vehicle2"> Bar Two</label><br>
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="barThree">
                         <label for="vehicle3"> Bar Three</label><br><br>
-                        <input type="submit" value="Submit">
+                        <a class="eventsbutton" onclick="addEmail("barone@gmail.com")" style="vertical-align:middle"><span>Filter</span></a>
                     </form>
                 </div>
             </div>
