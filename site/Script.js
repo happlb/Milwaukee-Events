@@ -36,18 +36,6 @@ function openPage(pageName, elmnt) {
     w3_close();
 }
 
-function w3_open() {
-    document.getElementById("main").style.marginLeft = "30vw";
-    document.getElementById("mySidebar").style.width = "30vw";
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-    document.getElementById("main").style.marginLeft = "0%";
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("openNav").style.display = "inline-block";
-}
-
 
 function addEmail(emailField) {
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField)) {

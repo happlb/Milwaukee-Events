@@ -83,6 +83,10 @@ header h1 {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #0d2240;
     font-weight: bold;
     text-align: center;
@@ -90,63 +94,75 @@ footer {
     height: 10vh;
 }
 
+.footer,
+.push {
+    height: 50px;
+}
+
 #Events {
 }
 
-.filterBar {
-    position: absolute;
-    top: 17vh;
-    background-color: #f7a800;
-    font-weight: bold;
-    color: white;
-    padding-top: 1vh;
-    padding-left: 1vw;
-    height: 73vh;
-}
 
-.filterButtonOpened {
-    margin-right: 1vw;
-    float: right;
-    width: 2vw;
-    height: 3vh;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.filterButtonClosed {
-    margin-top: 8vh;
-    margin-left: 2vw;
+.eventLeftPanel {
+    Position: absolute;
+    top: 20vh;
+    left: 3vh;
     float: left;
-    height: 4.5vw;
-    width: auto;
-    font-weight: bold;
-    cursor: pointer;
+    display: block;
+}
+
+#Events h2 {
+    padding: unset;
+    margin: unset;
+}
+
+#Events h3 {
+    color: black;
+    font-size: 5vh;
 }
 
 
+#closedFilterBar {
+    border-left: 3vw solid #00a8e1;
+    background-color: #f7a800;
+    height: 65vh;
+    width: 30vw;
+    max-height: 65vh;
+    max-width: 45vw;
+    margin-top: 1vh;
+    margin-left: -3vw;
+    float: left;
+    display: block;
+}
+
+#openNav {
+    margin-top: .5vh;
+    margin-left: 2vw;
+    height: 3.75vh;
+}
 
 #Bars {
 }
 
 #About img {
-    position:absolute;
-    top:20vh;
-    right:3vw;
-    width:30vw;
-    height:auto;
-    max-height:70vh;
-    overflow:hidden;
+    position: absolute;
+    top: 20vh;
+    right: 3vw;
+    width: 30vw;
+    height: auto;
+    max-height: 70vh;
+    overflow: hidden;
 }
 
-    #About p {
-        font-weight: bold;
-        color: #f7a800;
-        padding-left: 3vw;
-        max-height: 50vh;
-        width: 65vw;
-        overflow: auto;
-        font-size: 2.5vw;
-    }
+#About p {
+    font-weight: bold;
+    color: #f7a800;
+    padding-left: 3vw;
+    max-height: 50vh;
+    width: 65vw;
+    overflow: auto;
+    font-size: 2.5vw;
+}
 
 #Contact p {
     text-decoration: unset;
@@ -201,9 +217,9 @@ footer {
     left: 3vw;
 }
 
-#Contact h2{
-    margin:unset;
-    padding:unset;
+#Contact h2 {
+    margin: unset;
+    padding: unset;
 }
 
 .emailButton {

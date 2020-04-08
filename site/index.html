@@ -20,21 +20,21 @@
         <button class="tablink" onclick="openPage('Contact', this)">Contact Us</button>
     </header>
 
-    <div class="filterBar" style="display:none" id="mySidebar">
-        <button class="filterButtonOpened"
-                onclick="w3_close()">
-            &times;
-        </button>
-        <div>
-            filters will go here
-        </div>
-    </div>
+ 
 
     <div id="Events" class="tabcontent">
         <div id="main">
             <!--filter-solid.svg taken from  https://fontawesome.com/icons/filter-->
-            <img src='filter-solid.svg' id="openNav" class="filterButtonClosed" onclick="w3_open()">
-            <h2>Events,</h2>
+            <div class="eventLeftPanel">
+                <h2>Events,</h2>
+                <br>
+                <div  id="closedFilterBar">
+                    <h3>
+                        <img src='filter-solid.svg' id="openNav">  Filters
+                    </h3>
+                </div>
+                <div class="push"></div>
+            </div>
             <p>events will be listed here</p>
         </div>
 
