@@ -99,7 +99,10 @@ footer {
     height: 50px;
 }
 
-#Events {
+#Events form {
+    float: left;
+    padding-left: 3vw;
+    padding-top: 2vh;
 }
 
 
@@ -121,13 +124,20 @@ footer {
     font-size: 5vh;
 }
 
+#Events h4 {
+    font-weight: bold;
+    color: #f7a800;
+    font-size: 3vw;
+    float: left;
+    width: 100%;
+    border-top: 10vh sold blue;
+}
 
 #closedFilterBar {
-    border-left: 3vw solid #00a8e1;
-    background-color: #f7a800;
-    height: 65vh;
+    border-top: 3vw solid #f7a800;
+    border-right: 3vw solid #00a8e1;
+    height: 100vh;
     width: 30vw;
-    max-height: 65vh;
     max-width: 45vw;
     margin-top: 1vh;
     margin-left: -3vw;

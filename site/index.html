@@ -28,14 +28,33 @@
             <div class="eventLeftPanel">
                 <h2>Events,</h2>
                 <br>
-                <div  id="closedFilterBar">
-                    <h3>
-                        <img src='filter-solid.svg' id="openNav">  Filters
-                    </h3>
+                <div id="closedFilterBar">
+                    <form action="/action_page.php">
+                        <h4>Neighborhoods</h4>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="downtown">
+                        <label for="vehicle1"> Downtown</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="shorewood">
+                        <label for="vehicle2"> Shorewood</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="eastSide">
+                        <label for="vehicle3"> East Side</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="walkersPoint">
+                        <label for="vehicle3"> Walkers Point</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="thirdward">
+                        <label for="vehicle3"> Third Ward</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="bayview">
+                        <label for="vehicle3"> Bay View</label><br><br>
+                        <h4>Bars</h4>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="barOne">
+                        <label for="vehicle1"> Bar One</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="barTwo">
+                        <label for="vehicle2"> Bar Two</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="barThree">
+                        <label for="vehicle3"> Bar Three</label><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
-                <div class="push"></div>
             </div>
-            <p>events will be listed here</p>
+            <div>events will be listed here</div>
         </div>
 
     </div>
