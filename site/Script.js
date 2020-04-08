@@ -11,6 +11,7 @@ window.onload = function () {
 
 function startTab() {
     document.getElementById("defaultOpen").click();
+    makeList();
 
 }
 
@@ -57,57 +58,38 @@ function ValidateEmail(inputText) {
     }
 }
 
-var MongoClient = require('mongodb').MongoClient,
-  f = require('util').format,
-  fs = require('fs');
+function makeList() {
+    // Establish the array which acts as a data source for the list
+    let listData = [
+        'Blue',
+        'Red',
+        'White',
+        'Green',
+        'Black',
+        'Orange'
+    ],
+        // Make a container element for the list
+        listContainer = document.createElement('div'),
+        // Make the list
+        listElement = document.createElement('ul'),
+        // Set up a loop that goes through the items in listItems one at a time
+        numberOfListItems = listData.length,
+        listItem,
+        i;
 
-//Specify the Amazon DocumentDB cert
-var ca = [fs.readFileSync("rds-combined-ca-bundle.pem")];
+    // Add it to the page
+    document.getElementsByClassName('eventList')[0].appendChild(listContainer);
+    listContainer.appendChild(listElement);
 
-//Create a MongoDB client, open a connection to Amazon DocumentDB as a replica set, 
-//  and specify the read preference as secondary preferred
-var client = MongoClient.connect(
-'mongodb://<sample-user>:<password>@sample-cluster.node.us-east-1.docdb.amazonaws.com:27017/sample-database?ssl=true&replicaSet=rs0&readPreference=secondaryPreferred', 
-{ 
-  sslValidate: true,
-  sslCA:ca,
-  useNewUrlParser: true
-},
-function(err, client) {
-    if(err)
-        throw err;
-        
-    //Specify the database to be used
-    db = client.db('emailList');
-    
-    //Specify the collection to be used
-    col = db.collection('emailList-collection');
+    for (i = 0; i < numberOfListItems; ++i) {
+        // create an item for each one
+        listItem = document.createElement('li');
 
-    //Insert a single document
-    col.insertOne({'hello':'Amazon DocumentDB'}, function(err, result){
-      //Find the document that was previously written
-      col.findOne({'hello':'Amazon DocumentDB'}, function(err, result){
-        //Print the result to the screen
-        console.log(result);
-        
-        //Close the connection
-        client.close()
-      });
-   });
-});
+        // Add the item text
+        listItem.innerHTML = listData[i];
 
-let vh = window.innerHeight * 0.01;
-let vw = window.innerWidth * .01;
-
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-// We listen to the resize event
-window.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    let vw = window.innerWidth * .01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    document.documentElement.style.setProperty('--vw', `${vw}px`);
-});
+        // Add listItem to the listElement
+        listElement.appendChild(listItem);
+    }
+}
 

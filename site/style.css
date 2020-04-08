@@ -189,6 +189,11 @@ footer {
     height: 3.75vh;
 }
 
+.eventList {
+    padding-top: 20vh;
+    padding-left: 40vw;
+}
+
 #Bars {
 }
 
